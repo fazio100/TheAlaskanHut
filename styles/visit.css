@@ -1,0 +1,124 @@
+body{
+    background-image: url("../img/bg.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+/*****************************************/
+
+
+.location {
+
+    box-shadow: 0px 0px 20px rgb(240, 250, 192);
+
+    opacity: 0.85;
+    width: 90%;
+    height: 530px;
+    border-radius: 20px;
+    background-color: rgb(249, 255, 207);
+
+    margin: 30px;
+
+    padding: 20px;
+    display: flex;
+    font-size: 3vw;
+    text-align: center;
+}
+
+.location h1, .location p, .location a{
+    color:black;
+}
+
+.location h1, .location h1:end{
+    transition: 0.7s;
+    margin: 0px;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.location h1:hover{
+    transition: 0.7s;
+    letter-spacing: 5px;
+    transform: scale(1.1);
+    font-weight: bold;
+    cursor: default;
+}
+
+
+
+.location p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.location div, .location img{
+    height: 100%;
+    border-radius: inherit;
+}
+
+.location div{
+    padding: 20px;
+    width: 55%;
+}
+
+
+.location img{
+    width: 45%;
+    transition: 0.7s;
+    transform: scale(1);
+    rotate: 0;
+    object-fit: cover;
+}
+
+.location img:hover{
+    transition: 0.7s;
+    transform: scale(1.1);
+    rotate: 5deg;
+}
+
+
+.location .left{
+    margin-right: 50px;
+}
+
+
+
+.tripadvisor{
+    display: inline-block;
+    width: max-content;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: rgb(30, 30, 30);
+    background-color: rgb(241, 246, 100);
+    text-decoration: none;
+}
+
+.tripadvisor:hover{
+    text-decoration: none;
+    transition: 0.4s;
+    scale: 1.05;
+    background-color: rgb(230, 235, 103);
+}
+
+.tripadvisor:active{
+    text-decoration: none;
+    transition: 0.4s;
+    background-color: rgb(205, 235, 95);
+}
+
+
+
+
+
+
+.gold{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgb(255, 255, 0);
+}

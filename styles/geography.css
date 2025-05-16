@@ -1,0 +1,259 @@
+body{
+    background: rgb(12, 12, 12);
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url("../img/geobg.jpg"); 
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(5px); */
+}
+
+
+.ok{
+    transition: .4s;
+
+    min-width: 200px;
+    width: max-content;
+    font-size: 25px;
+    padding: 10px;
+    background-color: inherit;
+    border-radius: 10px;
+    background-color: rgba(27, 27, 27, 0.516);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+}
+
+.ok:hover{
+    transition: 0.5s;
+    background-color: white;
+    box-shadow: 0px 0px 10px white;
+    transform: scale(1.1);
+    color: black
+}
+
+.section{
+    width: 800px;
+    background-color: rgba(59, 59, 59, 0.533);
+    border-radius: 30px;
+    padding: 40px;
+    text-align: center;
+}
+
+
+table{
+    width: 500px;
+    font-size: 20px;
+    margin: 40px;
+    font-weight: bold;
+    /* border: 4px solid rgba(191, 206, 117, 0.751); */
+    border-radius: 10px;
+}
+
+
+td{
+    text-align: left;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: default;
+    color: rgba(255, 255, 255, 0.649);
+}
+
+td:hover{
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 0px 0px 5px rgb(205, 205, 205);
+    transition: 0.3s;
+}
+
+tr{
+    transition: 0.4s;
+}
+
+tr:nth-child(odd){
+    background-color: rgba(38, 38, 38, 0.516);
+}
+tr:nth-child(even){
+    background-color: rgba(27, 27, 27, 0.516);
+}
+
+
+tr:hover{
+    transform: scaleX(1.05);
+    transition: 0.4s;
+}
+
+
+.meteo{
+    background-color: rgba(91, 91, 91, 0.274);    
+}
+
+
+.section h3{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(37, 37, 37) 30%, rgb(37, 37, 37) 70%, rgba(255, 255, 255, 0.0) 100%);
+    text-shadow: 0px 0px 20px rgb(205, 205, 205);
+    letter-spacing: 3px;
+}
+
+.meteo input::placeholder{
+    color:rgb(39, 39, 39);
+}
+
+.search-bar input[type="search"]::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+
+    right:20px;  
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: rgba(27, 27, 27, 0.767);
+}
+
+.search-bar input[type="search"]{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: inherit;
+}
+
+.section .info, .section .info *{
+    font-size: 15px;
+    font-style: italic;
+    color: rgba(198, 198, 198, 0.729)
+}
+
+
+
+
+
+.background-emoji{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 300px;
+    transform: translate(-50%);
+    z-index: -1;
+    color:rgb(255, 255, 255, 0.45);
+}
+
+
+
+
+.map{
+    background: url("../img/physical.png") left top no-repeat;
+    box-shadow: 0px 0px 40px rgb(84, 84, 84);
+    width: 90%;
+    border-radius: 30px;
+    aspect-ratio: 3/2;
+
+    /* Rimuovi queste: */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* position: relative; */
+    /* transform: translate(-50%); */
+}
+
+
+
+.hotspot{
+    z-index: 0;
+    position: relative;
+    max-width: 350px;
+    background-color: red;
+    max-height: 500px;
+    height: fit-content;
+
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+.pin{
+    transition: .6s;
+    
+    width: 50px;
+    height: 50px;
+    background-color: rgb(41, 126, 41);
+    background-size: cover;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 0px;
+    cursor:pointer;
+    z-index: 1;
+}
+
+
+.pin:hover{
+    transition: .6s;
+    background-color: rgb(26, 43, 117);
+    transform: translateX(-50%) scale(1.1);
+}
+
+.hotspot:has(.pin:hover) .description{
+    opacity: 1;
+    scale: 1;
+    filter: blur(0px);
+    visibility: visible;
+    transition: .6s;
+}
+
+
+
+
+.description{
+    z-index: 2s;
+    transition: 0.6s;
+    opacity: 0;
+    filter: blur(10px);
+    scale: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    height: max-content;
+    background: linear-gradient(rgb(17, 24, 62), rgb(66, 70, 179));
+    color:rgb(210, 210, 210);
+    border-radius: 10px;
+    padding: 15px;
+    padding-bottom: 40px;
+    text-align: justify;
+}
+
+.description h4{
+    text-shadow: 0px 0px 20px rgb(205, 205, 205);
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+
+
+.description:hover{
+    display: block;
+}
+
+
+
+.container {
+    background-color: rgb(31, 31, 31);
+    width: 100%;
+    height: max-content;
+    padding: 90px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

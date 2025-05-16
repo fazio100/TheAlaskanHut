@@ -1,0 +1,39 @@
+/* ------------------TOPNAV------------------ */
+
+.topnav {
+    width: 100%;
+    overflow: hidden;
+    background: rgb(27, 27, 27);
+    margin: 0;
+}
+
+.topnav a {
+    background: rgb(27, 27, 27);
+    padding: 20px;
+    color:white;
+    font-size: large;
+    font-weight: bold;
+    border-radius:0;
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.topnav a:nth-child(even){
+    background: rgb(21, 21, 21);
+}
+.topnav a:hover{
+    transition: 0.4s;
+    background: rgb(255, 255, 255);
+    color:black;
+}
+.topnav a:active{
+    transition: 0.4s;
+    background: rgb(0, 6, 63);
+}
+
+.topnav ul{
+    visibility: hidden;
+}
+
+/* ------------------------------------------ */

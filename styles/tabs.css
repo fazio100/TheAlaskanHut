@@ -1,0 +1,55 @@
+body{
+    overflow: hidden;
+}
+
+#container{
+    position: relative;
+
+}
+
+#tabbtn-container{
+    width: 90vw;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    background: rgb(21, 21, 21);
+}
+
+.tabbtn{
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 0;
+    font-size: 20px;
+    background: rgb(21, 21, 21);
+    color: white;
+}
+
+.tabbtn:hover{
+    opacity: 1;
+    transition: 0s;
+}
+
+.tab{
+    position: absolute;
+    top: 50px;
+    justify-items: center;
+    margin: 0;
+    width: 90vw;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 80vh;
+    /* background: rgb(67, 114, 119); */
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.tab p {
+    line-height: 40px;
+}

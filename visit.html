@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosa visitare?</title>
+
+
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/window.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/sidenav.css">
+    <link rel="stylesheet" href="styles/searchbar.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/topnav.css">
+    <link rel="stylesheet" href="styles/visit.css">
+    
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a onclick="showSidenav()"> Opzioni </a>
+        <a href="#anchorage">Anchorage</a>
+        <a href="#juneau">Juneau</a>
+        <a href="#ketchikan">Ketchikan</a>
+        <a href="#skagway">Skagway</a>
+    </div>
+    
+    <div class="sidenav">
+        <div onclick="showSidenav()">
+            <img src="img/back.svg">
+        </div>
+        <ul>
+            <li><a href="history.html">Storia</a></li>
+            <li><a href="geography.html">Geografia</a></li>
+            <li><a href="landscapes.html">Panorami</a></li>
+            <li><a href="about.html?tab=Contattaci">Contattaci</a></li>
+            <li><a href="about.html?tab=Cookies">Cookies</a></li>
+            <li><a href="about.html?tab=L'idea">L'idea</a></li>
+        </ul>
+    </div>
+    
+
+    <h1 class="gold">Cosa Visitare?</h1>
+
+
+
+    <div class="search">
+        <div class="search-bar">
+    
+            <input type="search" placeholder="Cerca un luogo di interesse" onkeyup="updateFilters()" onmousedown="updateFilters()">
+            <img src="img/search.svg" onclick="search()">
+    
+            <ul class="filter-list">
+                <li><a href="#anchorage">Anchorage</a></li>
+                <li><a href="#juneau">Juneau</a></li>
+                <li><a href="#ketchikan">Ketchikan</a></li>
+                <li><a href="#skagway">Skagway</a></li>
+                <li><a href="#fairbanks">Fairbanks</a></li>
+                <li><a href="#aleutian">Isole Aleutine</a></li>
+                <li><a href="#tracy">Tracy Arm</a></li>
+                <li><a href="#mendenhall">Ghiacciaio Mendenhall</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+    <iframe class="frame appear"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7617470.222091857!2d-152.98885186345208!3d64.31710979899364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5400df9cc0aec01b%3A0xbcdb5e27a98adb35!2sAlaska%2C%20Stati%20Uniti!5e1!3m2!1sit!2sit!4v1746352180714!5m2!1sit!2sit"
+    width="600" height="450" style="border:0;"
+    allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <div id="anchorage" class="location appear">
+        <div class="left">
+            <h1>Anchorage</h1>
+            <a class="tripadvisor"
+                href="https://www.anchorage.net/#:~:text=Anchorage%20is%20the%20perfect%20Alaska,and%20captivating%20arts%20and%20culture.">
+                Voglio saperne di più!
+            </a>
+            <p>
+                Anchorage è la perfetta fuga in
+                Alaska. Situata all'interno di
+                Dena'ina Ełnena, sulle terre tradizionali
+                del popolo Dena'ina Athabascan e il
+                villaggio nativo di Eklutna, la città
+                unisce la bellezza selvaggia dell'Alaska,
+                i comodi comfort urbani, gli affascinanti
+                spazi esterni e l'arte e la cultura
+                accattivante. Scopri ghiacciai scintillanti,
+                una fauna selvatica abbondante, vasti
+                parchi e sentieri, e abbaglianti luci del
+                nord. Un viaggio ad Anchorage apre le porte
+                al meglio dell'Alaska, tutto in
+                un unico posto.
+            </p>
+        </div>
+        <img class="right" src="img/anchorage.jpg">
+    </div>
+
+    <div id="juneau" class="location appear">
+        <img class="left" src="img/juneau.jpg">
+        <div class="right">
+            <h1>Juneau</h1>
+            <a class="tripadvisor"
+                href="https://www.tripadvisor.it/Tourism-g31020-Juneau_Alaska-Vacations.html">
+                Voglio saperne di più!
+            </a>
+            <p>
+                L'Eaglecrest Ski Area è l'unica
+                stazione sciistica dell'Alaska
+                sudorientale e sorge sull'Isola
+                di Douglas, a soli 15 km dal
+                vicino centro abitato. Eaglecrest
+                offre 31 piste di sci alpino e
+                tre anelli di fondo che si snodano
+                su 2,5 km2 di aree battute. Per
+                chi ama l'avventura, la stazione
+                sciistica è circondata su entrambi
+                i lati da altre centinaia di ettari
+                di fuori pista.
+            </p>
+        </div>
+    </div>
+
+    <div id="ketchikan" class="location appear">
+        <div class="left">
+            <h1>Ketchikan</h1>
+            <a class="tripadvisor"
+                href="https://www.visit-ketchikan.com/">
+                Voglio saperne di più!
+            </a>
+            <p>
+                Ketchikan, in Alaska, è davvero l'inizio
+                dell'ultima frontiera. Situata all'ingresso
+                più meridionale del famoso Inside Passage
+                dell'Alaska, una rete di corsi d'acqua che
+                si snoda attraverso alcune delle aree
+                selvagge più belle e mozzafiato del mondo,
+                Ketchikan è famosa soprattutto per tre
+                cose: salmoni vivaci, paesaggi idilliaci e
+                un'incredibilmente ricca cultura nativa
+                dell'Alaska.
+            </p>
+        </div>
+        <img class="right" src="img/ketchikan.jpg">
+    </div>
+
+    <iframe class="frame appear" style="margin-bottom: 20px;"
+    src="https://www.youtube.com/embed/DOxIatGWqxQ?si=2-BrDPaSLu5WZXVO"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; 
+    gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+    </iframe>
+
+    <div id="skagway" class="location appear">
+        <img class="left" src="img/skagway.jpg">
+        <div class="right">
+            <h1>Skagway</h1>
+            <a class="tripadvisor"
+                href="https://www.viaggi-usa.it/skagway/">
+                Voglio saperne di più!
+            </a>
+            <p>
+                Skagway è il villaggio più turistico d'Alaska.
+                <br>
+                Immagina il set di un vecchio <b>film western</b>,
+                con il saloon al centro della via, attorniato
+                da case in legno ognuna di un colore diverso.
+                Poi aggiungi numerose navi da crociera
+                accalcate lungo la riva, ognuna delle quali
+                ospita il doppio dei passeggeri rispetto alla misera
+                popolazione locale, che aprono i portelloni
+                tutte insieme e lasciano sciamare sulla banchina
+                folle caotiche di turisti internazionali.
+            </p>
+        </div>
+    </div>
+
+    <div id="fairbanks" class="location appear">
+        <div class="left">
+            <h1>Fairbanks</h1>
+            <a class="tripadvisor"
+                href="https://www.viaggi-usa.it/fairbanks-cosa-vedere/">
+                Voglio saperne di più!
+            </a>
+            <p>
+                Nonostante abbia poco più di 30mila
+                abitanti, Fairbanks è la seconda città
+                più grande d'Alaska. La sua importanza
+                deriva però soprattutto dall'essere
+                l'unico centro abitato definibile come
+                città nel centro-nord dello stato.
+                Fairbanks è una delle
+                mete imperdibili in un viaggio in Alaska!
+                Il motivo principale è probabilmente
+                che Fairbanks è la migliore località
+                per vedere l'<b>aurora boreale</b> in tutto
+                il continente americano. Questo intrigante
+                fenomeno atmosferico è tipico delle gelide
+                notti invernali, ma anche nei mesi più
+                caldi può avere senso recarsi qui.
+            </p>
+        </div>
+        <img class="right" src="img/fairbanks.jpg">
+    </div>
+
+    <div id="aleutian" class="location appear">
+        <img class="left" src="img/aleutian.jpg" style="width: 45%;">
+        <div class="right">
+            <h1>Isole Aleutine</h1>
+            <a class="tripadvisor"
+                href="https://www.travelalaska.com/destinations/regions/southwest/aleutian-islands">
+                Voglio saperne di più!
+            </a>
+            <p>
+                Le Isole Aleutine sono
+                un vero e proprio paradiso per
+                gli amanti dell'avventura e della
+                <b>natura incontaminata</b>. L'arcipelago
+                si compone di oltre 2.500 isolette,
+                dove la principale è Unalaska, in
+                cui vive la maggior parte della
+                popolazione della zona. Qui
+                comanda la natura, non l'uomo.
+                In tutto l'arcipelago
+                si contano oltre 60 vulcani attivi e,
+                trovandosi all'interno dell'Alaska
+                Maritime National Wildlife Refuge,
+                la fauna selvatica locale vive
+                indisturbata.
+            </p>
+        </div>
+    </div>
+
+    <iframe class="frame appear" style="margin-bottom: 20px;"
+    src="https://www.youtube.com/embed/uF3Ofr_rj28?si=UzaMkeTv6xeBJ0Kz"
+    title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay;
+    clipboard-write; encrypted-media;
+    gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+    </iframe>
+
+    <div id="tracy" class="location appear">
+        <div class="left">
+            <h1>Tracy Arm</h1>
+            <a class="tripadvisor"
+                href="https://www.tripadvisor.com/Attraction_Review-g31020-d630993-Reviews-Tracy_Arm_Fjord-Juneau_Alaska.html">
+                Voglio saperne di più!
+            </a>
+            <p>
+                Il fiordo Tracy Arm si estende per
+                48 chilometri lungo la natura selvaggia
+                della Foresta Nazionale di Tongass.
+                Una crociera attraverso questo passaggio
+                stretto e profondo offre alcuni degli
+                scenari più mozzafiato di tutta l'Alaska.
+                Osserva i ghiacciai attivi incastonati
+                sulle cime delle montagne di oltre
+                2.000 metri e le cascate che si tuffano
+                dai dirupi coperti da sempreverdi.
+                Ammira la natura selvaggia e gli iceberg
+                azzurro intenso che galleggiano
+                accanto alla nave.
+            </p>
+        </div>
+        <img class="right" src="img/tracyarm.jpg">
+    </div>
+
+
+    <div id="mendenhall" class="location appear">
+        <img class="left" src="img/mendenhall.jpg">
+        <div class="right">
+            <h1>Mendenhall</h1>
+            <a class="tripadvisor"
+                href="https://www.alaska.org/detail/mendenhall-glacier">
+                Voglio saperne di più!
+            </a>
+            <p>
+                L'unico ghiacciaio nel sud-est dell'Alaska
+                accessibile su strada, il grande edificio
+                di Mendenhall si tuffa dall'immenso campo
+                di ghiaccio di Juneau. Il ghiacciaio si sta
+                ritirando da 300-400 anni, sin dalla piccola
+                era glaciale, e dal 1929 è tornato indietro
+                di 1.75 miglia. Punteggiato da cascate
+                e lussureggianti foreste, il robusto ghiacciaio
+                raggiunge una straordinaria vista di montagna.
+                Questo ambiente naturale, sia in estate che
+                in inverno, è uno dei più spettacolari e
+                interessanti d'Alaska.
+            </p>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <p>Creato da Fabrizio Della Patria - Liceo Scientifico A.Vallone 3ASA</p>
+        <p>Github: <b>fazio100</b><p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+
+</body>
+</html>

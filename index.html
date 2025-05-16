@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>The Alaskan Hut</title>
+    
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/window.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/sidenav.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/topnav.css">
+
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+    </script>
+</head>
+<body style="justify-items: center;">
+
+    <div class="topnav">
+        <a onclick="showSidenav()"> Opzioni </a>
+        <a href="#description"> Che cos'è? </a>
+        <a href="#why"> Perché? </a>
+        <a href="#capital"> La Capitale </a>
+        <a href="#discover">Scopri</a>
+    </div>
+    
+    <div class="sidenav">
+        <div onclick="showSidenav()">
+            <img src="img/back.svg">
+        </div>
+        <ul>
+            <li><a href="history.html">Storia</a></li>
+            <li><a href="geography.html">Geografia</a></li>
+            <li><a href="landscapes.html">Panorami</a></li>
+            <li><a href="visit.html">Cosa Visitare</a></li>
+            <li><a href="about.html?tab=Contattaci">Contattaci</a></li>
+            <li><a href="about.html?tab=Cookies">Cookies</a></li>
+            <li><a href="about.html?tab=L'idea">L'idea</a></li>
+        </ul>
+    </div>
+    
+
+
+
+    <h1 class="glow">The Alaskan Hut</h1>
+    
+
+    <iframe
+        width="1120" height="630"
+        style="border-radius: 30px;"
+        src="https://www.youtube.com/embed/CHSnz0bCaUk?si=NuX4mf8yzlBxHeOA"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+
+    <br>
+    <br>
+    <br>
+
+    
+    <div class="text appear" id="description">
+        <h2>Che cos'è?</h2>
+        <p>
+            L'Alaska è il 49° Stato, nonchè il più settentrionale, esteso
+            e meno popolato degli
+            Stati Uniti d'America, che nel 2024 conta un totale di 740.133
+            abitanti. Per la sua posizione geografica è anche lo Stato più
+            freddo degli USA. Confina solo con il Canada a Est.
+        </p>
+        
+        <br>
+        <br>
+        <br>
+        
+        <a href="https://www.google.it/maps/place/Alaska,+Stati+Uniti/@61.9788838,-144.8536555,4z/data=!4m6!3m5!1s0x5400df9cc0aec01b:0xbcdb5e27a98adb35!8m2!3d63.588753!4d-154.4930619!16zL20vMGhqeQ?hl=it&entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D">
+            Visita
+            <img src="img/pin.svg">
+        </a>
+        
+    </div>
+
+    <div class="appear" id="slideshow">
+        <img onclick="swapImage(-1)" id="left" src="img/leftArrow.svg">
+        <img onclick="swapImage(+1)" id="right" src="img/rightArrow.svg">
+        <img class="image active" src="img/anchorage.jpg" title="Anchorage">
+        <img class="image appear" src="img/boreale.jpg" title="Aurora boreale dell'Alaska">
+        <img class="image" src="img/mckinley.jpg" title="Monte McKinley">
+        <img class="image" src="img/forest.jpg" title="Una foresta dell'Alaska">
+        <p>Anchorage</p>
+        
+    </div>
+    
+    <div class="text appear" id="why">
+        <h2>Perché proprio l'Alaska?</h2>
+        <p>
+            L'Alaska è unica nella sua bellezza: <br>
+            i panorami, la flora e la fauna, il clima rigido che
+            ti fa sentire sempre in clima invernale, i laghi ghiacciati,
+            i tramonti prolungati, le baite e le capanne immerse nella
+            natura, per non parlare delle avventurose esperienze
+            praticabili in camper o van esplorando gli angoli più
+            incontaminati e puri del territorio!
+        </p>
+    </div>
+ 
+    <iframe
+        width="1120" height="630"
+        style="border-radius: 30px;"
+        src="https://www.youtube.com/embed/8MFfC2Z1WO4?si=qJ02vACstrNWxWrA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+
+    <div class="text appear" id="capital">
+        <h2>La Capitale</h2>
+        <p>
+            La Capitale dell'Alaska è Juneau. Conta circa 31 mila abitanti.
+        </p>
+        
+        
+        <br>
+        <br>
+        <br>
+
+        <a href="https://www.google.it/maps/place/Juneau,+Alaska,+Stati+Uniti/@58.3561975,-136.8335766,7z/data=!3m1!4b1!4m6!3m5!1s0x5400de6c6f6a3a8f:0x65ef25aae69f311!8m2!3d58.3004933!4d-134.4201306!16zL20vMGxfcTk?hl=it&entry=ttu&g_ep=EgoyMDI1MDQyMi4wIKXMDSoASAFQAw%3D%3D">
+            Juneau
+            <img src="img/pin.svg">
+        </a>
+
+    </div>
+
+    
+
+    <h1 class="appear"> - Scopri - </h1>
+
+    <div class="grid" id="discover">
+        <a class="appear" href="history.html"
+            style="background-image: url(img/history.jpg);">
+            <h2>storia</h2>
+        </a>
+        <a class="appear" href="geography.html"
+            style="background-image: url(img/geography.jpg);">
+            <h2>geografia</h2>
+        </a>
+        <a class="appear" href="visit.html"
+            style="background-image: url(img/juneau.jpg);">
+            <h2>cosa visitare</h2>
+        </a>
+        <a class="appear" href="landscapes.html"
+            style="background-image: url(img/landscape.jpg);">
+            <h2>panorami</h2>
+        </a>
+    </div>
+
+
+    <footer>
+        <p>Creato da Fabrizio Della Patria - Liceo Scientifico A.Vallone 3ASA</p>
+        <p>Github: <b>fazio100</b><p>
+    </footer>
+
+
+<script src="scripts/index.js"></script>
+</body>
+
+</html>

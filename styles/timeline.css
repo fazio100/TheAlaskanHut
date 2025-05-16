@@ -1,0 +1,82 @@
+.timeline{
+    width: 25px;
+    height: 1800px;
+    background: linear-gradient(0deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 186, 1) 46%, rgba(107, 255, 84, 1) 100%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+    border: 5px solid rgb(34, 34, 34);
+}
+
+.timeline > div{
+    position: relative;
+    height: 300px;
+}
+
+
+.timeline > div > div {
+    position: absolute;
+    visibility: visible;
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(25, 25, 25);
+    transform: translateY(-30px);
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(255, 255, 255);
+
+}
+
+
+.timeline > div > div > p{
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+.timeline > div > div > img{
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgb(136, 136, 136);
+    display: none;
+}
+
+.timeline > div > div:hover {
+    cursor: pointer;
+}
+
+.timeline > div > div:hover img {
+    display: block;
+}
+
+.timeline > div > button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(34, 34, 34);
+    background-color: rgb(40, 121, 161);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+}
+
+.timeline > div > button:hover {
+    cursor: pointer;
+    background-color: rgb(192, 65, 90);
+    transform: background-color 0.4s;
+    opacity: 1;
+}
+
+
+
+.timeline div:nth-child(even) div{
+    left: 200px;
+}
+
+.timeline div:nth-child(odd) div{
+    right: 200px;
+}
+
+

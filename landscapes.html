@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Panorami</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidenav.css">
+    <link rel="stylesheet" href="styles/topnav.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/landscapes.css">
+
+
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+
+    <div class="topnav">
+        <a href="index.html"> Home </a>
+        <a onclick="showSidenav()"> Opzioni </a>
+    </div>
+
+    
+    <div class="sidenav">
+        <div onclick="showSidenav()">
+            <img src="img/back.svg">
+        </div>
+        <ul>
+            <li><a href="history.html">Storia</a></li>
+            <li><a href="geography.html">Geografia</a></li>
+            <li><a href="visit.html">Cosa Visitare</a></li>
+            <li><a href="about.html?tab=Contattaci">Contattaci</a></li>
+            <li><a href="about.html?tab=Cookies">Cookies</a></li>
+            <li><a href="about.html?tab=L'idea">L'idea</a></li>
+        </ul>
+    </div>
+    
+
+    <div class="fullscreen">
+        <h1>I Panorami dell'Alaska</h1>
+    </div>
+
+
+    <div class="parallax-container">
+        <div class="parallax" style="background-image: url('img/denali.jpg')">
+            <div class="img-description appear">Monte McKinley, Parco Nazionale Denali</div>        
+        </div>
+
+        <div class="parallax" style="background-image: url('img/lanscapes/bear.jpg')">
+            <div class="img-description appear">un orso grizzly</div>        
+        </div>
+
+
+        <div class="parallax" style="background-image: url('img/lanscapes/flowers.jpg')">
+            <div class="img-description appear">una prateria fiorita</div>        
+        </div>
+
+        <div class="gallery" style="--width: 240px; --height: 200px; --quantity: 7;">
+            <img style="--position: 1" src="img/lanscapes/arctic.jpg">
+            <img style="--position: 2" src="img/lanscapes/bear.jpg">
+            <img style="--position: 3" src="img/lanscapes/deers.jpg">
+            <img style="--position: 4" src="img/lanscapes/flowers.jpg">
+            <img style="--position: 5" src="img/lanscapes/icelake.jpg">
+            <img style="--position: 6" src="img/lanscapes/rivercitiy.jpg">
+            <img style="--position: 7" src="img/lanscapes/sunset.jpg">
+        </div>
+
+        <div class="parallax" style="background-image: url('img/lanscapes/icelake.jpg')">
+            <div class="img-description appear">un lago ghiacciato</div>        
+        </div>
+        <div class="parallax" style="background-image: url('img/lanscapes/street.jpg')">
+            <div class="img-description appear">una lunga strada</div>               
+        </div>
+    </div>
+
+    
+
+    <div class="gallery" style="--width: 240px; --height: 200px; --quantity: 7;">
+        <img style="--position: 1" src="img/anchorage.jpg">
+        <img style="--position: 2" src="img/alaska1900.jpg">
+        <img style="--position: 3" src="img/bering.webp">
+        <img style="--position: 4" src="img/forest.jpg">
+        <img style="--position: 5" src="img/boreale.jpg">
+        <img style="--position: 6" src="img/mountain.jpg">
+        <img style="--position: 7" src="img/lanscapes/flowers.jpg">
+    </div>
+
+
+    <div class="parallax-container">
+        <div class="parallax" style="background-image: url('img/promontorio.jpg')">
+            <div class="img-description appear">un promontorio</div>        
+        </div>
+
+        <div class="parallax" style="background-image: url('img/anchorage.jpg')">
+            <div class="img-description appear">Anchorage</div>        
+        </div>
+    </div>
+
+    
+
+    <footer style="margin-top: 0;">
+        <p>Creato da Fabrizio Della Patria - Liceo Scientifico A.Vallone 3ASA</p>
+        <p>Github: <b>fazio100</b><p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lora;
+}
+
+
+body{
+    background: rgb(12, 12, 12);
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url("../img/background.jpg"); 
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(5px); */
+}
+
+
+
+h1{
+    font-size: 100px;
+    color:white;
+    font-weight: normal;
+    margin: 50px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+}
+
+h3 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgb(23, 23, 23);
+}
+
+p, li{
+    font-size: 25px;
+    color:white
+}
+
+.glow{
+    color: rgb(255, 255, 255);
+    outline: none;
+    animation: lighttube 5s linear infinite;
+}
+
+.appear{
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 25%;
+}
+
+
+.text{
+    width: 95%;
+    background-color: rgb(21, 21, 21);
+    border-radius: 30px;
+    padding: 60px;
+    margin: 40px;
+}
+
+.text h2{
+    font-weight: normal;
+    font-size: 50px;
+    text-shadow: 0 0 35px white;
+    margin-bottom: 40px;
+}
+
+.text p{
+
+    text-align: justify;
+}
+
+.text a{
+    display: flex;
+    border: 4px solid rgb(14, 73, 33);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 220px;
+    border-radius: 10px;
+    background-color: rgb(23, 133, 34);
+    color:white;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+}
+
+.text a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.text a:active{
+    opacity: 0.6;
+}
+
+
+.text a img{
+    height: 35px;
+}
+
+.text a>*{
+    margin: 10px;
+}
+
+
+
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white(0, 0, 255, .5);
+    text-decoration: underline;
+}
+
+
+table{
+    justify-self: center;
+}
+
+td, th{
+    text-align: center;
+    padding: 7px;
+}
+
+
+p{
+    width: 100%;
+    text-align: center;
+}
+
+#home{
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+button{
+    border-radius: 10%;
+    padding: 1%;
+    border: none;
+    background: rgb(255, 255, 255)
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2s;
+}
+button:active{
+    opacity: 0.6;
+    transition: 0.1;
+}
+.image{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* ---------------GRID------------------*/
+
+.grid{
+    width: 100%;
+    height: 30%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+}
+
+.grid a{
+    transition: 0.4s;
+
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    line-height: 300px;
+    margin: 30px;
+    font-size: 30px;
+    letter-spacing: 15px;
+    font-weight: normal;
+    border-style: dashed;
+    border-width: 3.5px;
+    border-color: white;
+
+    background-position-x: calc(50% + 20px);
+    background-position-y: center;
+}
+
+.grid h2{
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    filter: blur(30px);
+}
+
+.grid a:hover{
+    cursor: pointer;
+
+    /* animation: orbit .3s linear infinite; */
+    text-decoration: none;
+
+    box-shadow: 0px 0px 40px rgb(218, 255, 252);
+
+    background-position-x: -30px;
+    transform: scale(1.02);
+
+    transition: 0.4s;
+}
+
+
+.grid a:hover h2{
+    
+    font-size: 60px;
+    transition: font-size .4s, filter 0.4s;
+    filter: blur(0px);
+
+
+    background-position-x: -30px;
+}
+
+
+/* -------------------------------------*/
+
+
+/*-------------BOTTOM---------------*/
+
+footer{
+    width: 100%;
+    height: max-content;
+    background-color: rgba(27, 27, 27, 0.9);
+    padding: 50px;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+footer p{
+    color: rgb(116, 116, 116);
+    font-size: 20px;
+}
+
+
+/*-----------------------------------*/
+
+.socialbtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 4px;
+    background-size: cover;
+}
+
+/************************************/
+
+#homebtn{
+    background-color: white;
+    position: fixed;
+    left: 30px;
+    background-image: url("../img/home.svg");
+    border: 4px solid white;
+    top: 30px;
+    cursor: pointer;
+}
+
+#homebtn:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+#homebtn:active{
+    transform: scale(1.4);
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+
+/***************/
+
+.frame{
+    width: 1008px;
+    height: 567px;
+    border-radius: 20px;
+    
+}

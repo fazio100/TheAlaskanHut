@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>La Geografia</title>
+    
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/window.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <link rel="stylesheet" href="styles/sidenav.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/topnav.css">
+    <link rel="stylesheet" href="styles/searchbar.css">
+    <link rel="stylesheet" href="styles/geography.css">
+
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="text/javascript"
+        src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+    </script>
+</head>
+<body style="justify-items: center;">
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a onclick="showSidenav()"> Opzioni </a>
+        <a href="#pocket-meteo"> Pocket Meteo </a>
+        <a href="#map"> La Mappa </a>
+    </div>
+    
+    <div class="sidenav">
+        <div onclick="showSidenav()">
+            <img src="img/back.svg">
+        </div>
+        <ul>
+            <li><a href="history.html">Storia</a></li>
+            <li><a href="landscapes.html">Panorami</a></li>
+            <li><a href="visit.html">Cosa Visitare</a></li>
+            <li><a href="about.html?tab=Contattaci">Contattaci</a></li>
+            <li><a href="about.html?tab=Cookies">Cookies</a></li>
+            <li><a href="about.html?tab=L'idea">L'idea</a></li>
+        </ul>
+    </div>
+    
+
+
+    <h1 class="glow">La Geografia</h1>
+    
+
+        
+    <div id="pocket-meteo" class="section">
+
+        <div class="background-emoji" id="weather-emoji">
+            🌦️
+        </div>
+        
+
+        <h3>Pocket Meteo</h3>
+        
+        
+        <div class="search">
+            <div class="search-bar meteo">
+                <input type="search" placeholder="Cerca una città dell'Alaska">
+            </div>
+
+        </div>
+
+
+        <button class="ok">Vedi</button>
+
+
+
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>Temperatura:</td><td id="temp">0 °C</td>
+                </tr>
+                <tr>
+                    <td>Umidità:</td><td id="hum">0%</td>
+                </tr>
+                <tr>
+                    <td>Pressione:</td><td id="pres">0 atm</td>
+                </tr>
+                <tr>
+                    <td>Velocità vento:</td><td id="windspeed">0 km/h</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="info">
+            per realizzare questo form sono stati utilizzati i servizi
+            api del sito <a href="https://openweathermap.org/city/2643743"><b>OpenWeatherMap.org</b></a>
+        </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3 style="padding: 40px; font-size: 40px;">La Mappa</h1>
+
+    <div class="container">
+
+
+        <p style="color:rgb(133, 133, 133);">Passa con il cursore sopra i pulsanti per scoprire la geografia dell'Alaska!</p>
+
+        <br>
+        <br>
+
+        <div id="map" class="map appear">
+            <!-- NORTHERN -->
+            <div class="hotspot" style="left: 60%; top:15%;">
+                <div class="description">
+                    <h4>NORTHERN</h4>
+                    Questa regione comprende coste artiche, tundra, fiumi e montagne. È abitata principalmente da popolazioni indigene che vivono ancora di caccia e pesca tradizionale. Kotzebue è il centro principale. L’ambiente è aspro, ma ricco di fauna artica. Le comunicazioni avvengono spesso tramite aereo o via fiume, data la scarsità di infrastrutture.
+                </div>
+                <img class="pin" src="img/pin.svg">
+            </div>
+            <!-- INTERIOR -->
+            <div class="hotspot" style="left: 60%; top:35%;">
+                <div class="description">
+                    <h4>INTERIOR</h4>
+                    L’Interior dell’Alaska è una vasta regione continentale dominata da foreste di taiga, montagne e grandi fiumi come il Yukon e il Tanana. Le estati possono essere calde e secche, mentre gli inverni sono tra i più rigidi del Nord America. Fairbanks è il centro urbano principale. L’aurora boreale è spesso visibile nei cieli limpidi invernali. È una regione isolata, ma ricca di fauna selvatica.
+                </div>
+                <img class="pin" src="img/pin.svg">
+            </div>
+            <!-- SOUTHCENTRAL -->
+            <div class="hotspot" style="left: 65%; top:55%;">
+                <div class="description">
+                    <h4>SOUTHCENTRAL</h4>
+                    La regione Southcentral comprende paesaggi montuosi, coste, ghiacciai e valli fertili. È qui che si trova Anchorage, la città più popolosa dello stato. Questa zona è il cuore economico dell’Alaska, con attività legate a petrolio, pesca e trasporti. Il Cook Inlet e il Prince William Sound sono elementi geografici importanti, così come la presenza della Catena dell’Alaska.
+                </div>
+                <img class="pin" src="img/pin.svg">
+            </div>
+            <!-- SOUTHWEST -->
+            <div class="hotspot" style="left: 40%; top:55%;">
+                <div class="description">
+                    <h4>SOUTHWEST</h4>
+                    Il Southwest è una delle regioni più remote, caratterizzata da vulcani, isole, tundra e una costa frastagliata. Include le Isole Aleutine e la Penisola dell’Alaska. Il clima è umido e tempestoso. È ricco di biodiversità marina e avifauna, con comunità indigene che dipendono ancora dalla pesca e dalla caccia per vivere.
+                </div>
+                <img class="pin" src="img/pin.svg">
+            </div>
+            <!-- SOUTHEST -->
+            <div class="hotspot" style="left: 88%; top:65%;">
+                <div class="description">
+                    <h4>SOUTHEST</h4>
+                    Questa regione lunga e stretta, nota come Panhandle, è composta da fiordi, isole, foreste pluviali temperate e montagne. La capitale Juneau si trova qui. È fortemente influenzata dal clima oceanico e ospita il Tongass National Forest. La cultura Tlingit e Haida è profondamente radicata nel territorio. Le vie d’acqua sono fondamentali per trasporti e comunicazione.
+                </div>
+                <img class="pin" src="img/pin.svg">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <p>Creato da Fabrizio Della Patria - Liceo Scientifico A.Vallone 3ASA</p>
+        <p>Github: <b>fazio100</b><p>
+    </footer>
+
+
+
+<script src="scripts/geography.js"></script>
+<script src="scripts/index.js"></script>
+</body>
+
+</html>
